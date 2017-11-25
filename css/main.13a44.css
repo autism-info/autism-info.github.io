@@ -724,7 +724,7 @@ button:visited,
 
 .header-content li {
   font-size: 1.1rem;
-  text-indent: 1rem;
+  text-indent: 0.5rem;
 }
 
 .header-content button {
@@ -886,6 +886,7 @@ button:visited,
 .spoiler-body p {
   padding: 0 0.25rem;
   margin-bottom: 0;
+  text-indent: 1rem;
 }.peoples {
   overflow: hidden;
 }
@@ -973,7 +974,12 @@ button:visited,
 .person-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   color: #fff;
+}
+
+.person-info h3 {
+  text-align: center;
 }
 
 .person-info p {
