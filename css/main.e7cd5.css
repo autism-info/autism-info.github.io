@@ -1,0 +1,1273 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'AvenirNext', verdana, tahoma, arial;
+  font-size: 16px;
+  line-height: 1.4;
+  background-color: #fff;
+}
+
+::-moz-selection {
+  background: #42A5F5;
+}
+
+::selection {
+  background: #42A5F5;
+}
+
+a {
+  color: #1E88E5;
+  transition: color ease 300ms;
+}
+
+a:visited {
+  color: #1E88E5;
+  fill: #1E88E5;
+}
+
+a:hover {
+  transition-duration: 60ms;
+  color: #166dba;
+  fill: #166dba;
+  transition-duration: 60ms;
+}
+
+a:active {
+  transition-duration: 60ms;
+  color: #1360a4;
+  fill: #1360a4;
+  transition-duration: 60ms;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+date {
+  font-family: 'DroidSerifBoldItalic', 'Times New Roman', Times, serif;
+}[class^="icon"] {
+  height: 1rem;
+  width: 1rem;
+  fill: currentColor;
+}button,
+.button {
+  z-index: 0;
+  display: flex;
+  position: relative;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #ff86b1;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 300ms ease;
+}
+
+button:before,
+.button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  z-index: -1;
+  border-radius: 2px;
+  background-color: #ff86b1;
+  transition: background-color 300ms ease;
+}
+
+button:hover,
+button:active,
+button:focus,
+.button:hover,
+.button:active,
+.button:focus {
+  color: #fff;
+  border-color: #a78ec4;
+  transition-duration: 60ms;
+}
+
+button:hover:before,
+button:active:before,
+button:focus:before,
+.button:hover:before,
+.button:active:before,
+.button:focus:before {
+  background-color: #a78ec4;
+  transition-duration: 60ms;
+}
+
+button:visited,
+.button:visited {
+  color: #fff;
+}.main-menu {
+  z-index: 100;
+  position: relative;
+  display: block;
+  height: 70px;
+  background-color: #b0f5f9;
+}
+
+.main-menu:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 11px;
+  bottom: -11px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAALCAMAAAAZQ24SAAAASFBMVEUAAACw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fnZ6KtEAAAAF3RSTlMArVo33kIj0MuHaUnp1cG896F+cSoYDg46B8wAAABhSURBVCjPnc83EoAwDAXRL8nZ5Hj/m1LQMAxOvH6LxfkbjBH2ri0aPIsxuO1rX9u5cOBFjzUhCb5IMaYNKdpmFwU53KXCPqIkfMaKUSOod2gZtSI9umnWaBI9WaUcLcnuAvABHcQTOAnvAAAAAElFTkSuQmCC);
+}
+
+.main-menu-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .main-menu-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main-menu-container {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .main-menu-container {
+    width: 1200px;
+  }
+}
+
+.main-menu-content {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-menu img {
+  margin: 0.5rem 0;
+  margin-right: 2rem;
+}.header {
+  z-index: 1;
+  position: relative;
+  min-height: 40rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: #fff;
+  background-image: url(/img/mother-hero.5caf4.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .header-content {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-content {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-content {
+    width: 1200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    padding-left: calc(50% - 3rem);
+  }
+}
+
+.header-content h1 {
+  margin-bottom: 0rem;
+}
+
+.header-content p {
+  font-size: 1.1rem;
+  text-indent: 1rem;
+}
+
+.header-content li {
+  font-size: 1.1rem;
+  text-indent: 1rem;
+}
+
+.header-content button {
+  margin-top: 1rem;
+}
+
+.header h1 {
+  color: #2d2d2d;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 3.2rem;
+  }
+}
+
+.header h1 span {
+  color: #a78ec4;
+}.questions-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .questions-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .questions-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .questions-container {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .questions-container {
+    width: 1200px;
+  }
+}
+
+.questions-header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.questions-header h2 {
+  color: #a78ec4;
+  font-size: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.questions-header span {
+  margin: 0;
+}
+
+.questions-content {
+  display: grid;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .questions-content {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+.questions img {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .questions img {
+    display: block;
+  }
+}
+
+.spoiler:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.spoiler.i-open .spoiler-header {
+  color: #fff;
+  background-color: #ff86b1;
+}
+
+.spoiler.i-open .spoiler-header .plus {
+  opacity: 0;
+}
+
+.spoiler.i-open .spoiler-header .minus {
+  transition-duration: 60ms;
+  opacity: 1;
+}
+
+.spoiler.i-open .spoiler-body {
+  height: auto;
+}
+
+.spoiler-header {
+  position: relative;
+  padding: 1rem;
+  padding-right: 3rem;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: 'DroidSerifBoldItalic', 'Times New Roman', Times, serif;
+  color: #2d2d2d;
+  background-color: #fff;
+  box-shadow: 0px 6px 9px rgba(78, 78, 78, 0.1);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spoiler-header span {
+  pointer-events: none;
+}
+
+.spoiler-header .icon {
+  pointer-events: none;
+  position: absolute;
+  right: 1rem;
+  transition: opacity 300ms ease;
+}
+
+.spoiler-header .plus {
+  transition-duration: 60ms;
+  opacity: 1;
+}
+
+.spoiler-header .minus {
+  opacity: 0;
+}
+
+.spoiler-body {
+  overflow: hidden;
+  height: 0;
+  color: #2d2d2d;
+}
+
+.spoiler-body p {
+  padding: 0 0.25rem;
+  margin-bottom: 0;
+}.peoples {
+  overflow: hidden;
+}
+
+.peoples-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .peoples-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .peoples-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .peoples-container {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .peoples-container {
+    width: 1200px;
+  }
+}
+
+.peoples-header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.peoples-header h2 {
+  color: #a78ec4;
+  font-size: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.peoples-header span {
+  margin: 0;
+}
+
+.peoples-content {
+  display: grid;
+  min-height: 300px;
+}
+
+.person {
+  display: none;
+  padding: 2rem;
+  background-color: #a78ec4;
+  background-image: url(data:image/png;base64,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);
+  background-repeat: no-repeat;
+}
+
+.person.i-active {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .person {
+    grid-template-columns: 5fr 7fr;
+    grid-column-gap: 2rem;
+  }
+}
+
+.person-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.person-info {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.person-info p {
+  text-indent: 1rem;
+}
+
+.person img {
+  width: 100%;
+}
+
+.peoples-carousel {
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 160px;
+}
+
+@media screen and (min-width: 576px) {
+  .peoples-carousel {
+    grid-template-rows: 150px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .peoples-carousel {
+    grid-template-rows: 150px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .peoples-carousel {
+    grid-template-rows: 175px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .peoples-carousel {
+    grid-template-rows: 250px;
+  }
+}
+
+.peoples-carousel div {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+  box-shadow: 0 6px 20px transparent;
+}
+
+.peoples-carousel div:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(45, 45, 45, 0.4);
+  transition-duration: 60ms;
+}
+
+.peoples-carousel div img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}.peoples + .blog-digest {
+  margin-top: -2rem;
+}
+
+.blog-digest-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .blog-digest-container {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blog-digest-container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .blog-digest-container {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-digest-container {
+    width: 1200px;
+  }
+}
+
+.blog-digest-header {
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.blog-digest-header h2 {
+  color: #a78ec4;
+  font-size: 2.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.blog-digest-header span {
+  margin: 0;
+}
+
+.blog-digest-content {
+  padding-bottom: 2rem;
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  min-height: 300px;
+}
+
+@media screen and (min-width: 768px) {
+  .blog-digest-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .blog-digest-content {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+.blog-anounce {
+  display: grid;
+  grid-template-rows: 12rem 1fr;
+  background-color: #f9fafb;
+  border-radius: 0.25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  box-shadow: 0px 6px 9px rgba(78, 78, 78, 0);
+  transition: box-shadow 300ms ease;
+}
+
+.blog-anounce:hover {
+  box-shadow: 0px 6px 9px rgba(78, 78, 78, 0.1);
+  transition-duration: 60ms;
+}
+
+.blog-anounce-head {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-anounce-head date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #a78ec4;
+  padding: 0.25rem 0.5rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.blog-anounce-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-anounce-main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+}
+
+.blog-anounce-main h4 {
+  color: #2d2d2d;
+  margin-bottom: 0;
+}.blog-digest + .footer {
+  margin-top: 2rem;
+}
+
+.footer {
+  position: relative;
+  display: block;
+  background-color: #b0f5f9;
+}
+
+.footer:before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 11px;
+  top: -11px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAALCAMAAAAZQ24SAAAAS1BMVEUAAACw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fmw9fkDBFLvAAAAGHRSTlMArTfeQiPQy4dpWUnp1cG8XPehfnEqGA4F31mnAAAAYUlEQVQoz53NSQ6AIBAFUZpZVHD23/+kbkxMlNG3rxRLkSsZITTZnjWRy4wH1deTxovo6kKBiKEc9yMSBpcNuUeGlslwJxQEHj8SKoTP+ewMKo3bcUdKcWc9mhjruFIMv13E4B8ZCRptkAAAAABJRU5ErkJggg==);
+}
+
+.footer-content {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .footer-content {
+    width: 576px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-content {
+    width: 992px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-content {
+    grid-template-row: repeat(2, 1fr);
+    grid-column-row: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1rem;
+  }
+}
+
+.footer .counter {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-copyright {
+  color: #fff;
+  background-color: #a78ec4;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+}.tingle-modal *{box-sizing:border-box}.tingle-modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1000;display:flex;visibility:hidden;flex-direction:column;align-items:center;overflow:hidden;background:rgba(0,0,0,.8);opacity:0;cursor:pointer;transition:transform .2s ease}.tingle-modal--confirm .tingle-modal-box{text-align:center}.tingle-modal--noOverlayClose{cursor:default}.tingle-modal--noClose .tingle-modal__close{display:none}.tingle-modal__close{position:fixed;top:10px;right:28px;z-index:1000;padding:0;width:5rem;height:5rem;border:none;background-color:transparent;color:#f0f0f0;font-size:6rem;font-family:monospace;line-height:1;cursor:pointer;transition:color .3s ease}.tingle-modal__closeLabel{display:none}.tingle-modal__close:hover{color:#fff}.tingle-modal-box{position:relative;flex-shrink:0;margin-top:auto;margin-bottom:auto;width:60%;border-radius:4px;background:#fff;opacity:1;cursor:auto;transition:transform .3s cubic-bezier(.175,.885,.32,1.275);transform:scale(.8)}.tingle-modal-box__content{padding:3rem}.tingle-modal-box__footer{padding:1.5rem 2rem;width:auto;border-bottom-right-radius:4px;border-bottom-left-radius:4px;background-color:#f5f5f5;cursor:auto}.tingle-modal-box__footer:after{display:table;clear:both;content:""}.tingle-modal-box__footer--sticky{position:fixed;bottom:-200px;z-index:10001;opacity:1;transition:bottom .3s ease-in-out .3s}.tingle-enabled{overflow:hidden;height:100%}.tingle-modal--visible .tingle-modal-box__footer{bottom:0}.tingle-enabled .tingle-content-wrapper{filter:blur(15px)}.tingle-modal--visible{visibility:visible;opacity:1}.tingle-modal--visible .tingle-modal-box{transform:scale(1)}.tingle-modal--overflow{overflow-y:scroll;padding-top:8vh}.tingle-btn{display:inline-block;margin:0 .5rem;padding:1rem 2rem;border:none;background-color:grey;box-shadow:none;color:#fff;vertical-align:middle;text-decoration:none;font-size:inherit;font-family:inherit;line-height:normal;cursor:pointer;transition:background-color .4s ease}.tingle-btn--primary{background-color:#3498db}.tingle-btn--danger{background-color:#e74c3c}.tingle-btn--default{background-color:#34495e}.tingle-btn--pull-left{float:left}.tingle-btn--pull-right{float:right}@media (max-width:540px){.tingle-modal{top:0;display:block;padding-top:60px;width:100%}.tingle-modal-box{width:auto;border-radius:0}.tingle-modal-box__content{overflow-y:scroll}.tingle-modal--noClose{top:0}.tingle-modal--noOverlayClose{padding-top:0}.tingle-modal-box__footer .tingle-btn{display:block;float:none;margin-bottom:1rem;width:100%}.tingle-modal__close{top:0;right:0;left:0;display:block;width:100%;height:60px;border:none;background-color:#2c3e50;box-shadow:none;color:#fff;line-height:55px}.tingle-modal__closeLabel{display:inline-block;vertical-align:middle;font-size:1.5rem;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}.tingle-modal__closeIcon{display:inline-block;margin-right:.5rem;vertical-align:middle;font-size:4rem}}.tingle-modal--overflow {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.article h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.article p {
+  text-indent: 1rem;
+}
+
+.article img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.article img + img {
+  margin-top: 1rem;
+}
